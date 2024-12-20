@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mancing Perkoro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            display: flex;
+            width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .left, .right {
+            padding: 40px;
+        }
+        .left {
+            background-color: #fff;
+            flex: 1;
+        }
+        .right {
+            background: linear-gradient(to right, #5483b3, #7da0c4);
+            color: #fff;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .right h2 {
+            margin: 0;
+        }
+        .right p {
+            margin: 20px 0;
+        }
+        .right button {
+            background-color: #fff;
+            color: #052659;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .left h2 {
+            margin-bottom: 20px;
+        }
+        .left input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .left button {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(to right, #052659, #7da0c4);
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .left .remember {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .left .remember input {
+            margin-right: 10px;
+        }
+        .left .forgot {
+            text-align: right;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h2>Sign In to Destroy the World.</h2>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button>Sign In</button>
+            <div class="remember">
+
+            </div>
+            <div class="forgot">
+                <a href="#">Forgot Password ?</a>
+            </div>
+        </div>
+        <div class="right">
+            <h2>Welcome back, Administrator !</h2>
+            <p>Don't have an account?</p>
+            <button>Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>
